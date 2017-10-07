@@ -4,5 +4,5 @@
 	"subject" : "Sujeto del email",
 	"recipents" : ["test@email.com","test2@email.com"],
 	"schedule" : 1504526760031,
-	"html" : "<html><head></head><body><p>Contenido del Email</p></body></html>",
+	"html" : "<html><head></head><body><p>Contenido del Email</p></body></html>"
 }

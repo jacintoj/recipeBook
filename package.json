@@ -1,7 +1,7 @@
 {
-  "name": "churera",
+  "name": "evolutest",
   "version": "1.0.0",
-  "description": "A Boilerplate to make test easier",
+  "description": "Evolu test",
   "main": "server.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --colors --reporter spec --recursive ./components/*/tests/*.spec.js",
@@ -9,21 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Josheriff/churrera.git"
+    "url": "git+https://github.com/Josheriff/evolutest.git"
   },
   "author": "Josheriff",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Josheriff/churrera/issues"
+    "url": "https://github.com/Josheriff/evolutest/issues"
   },
-  "homepage": "https://github.com/Josheriff/churrera#readme",
+  "homepage": "https://github.com/Josheriff/evolutest#readme",
   "dependencies": {
     "body-parser": "1.16.1",
     "chai": "^4.1.2",
     "eslint": "^4.8.0",
     "express": "4.14.1",
     "mocha": "^4.0.1",
-    "mongoose": "4.8.3",
+    "mongoose": "^4.8.3",
     "node-uuid": "1.4.7",
     "shortid": "^2.2.8",
     "supertest": "^3.0.0"

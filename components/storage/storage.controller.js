@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const config = require('../../config.json');
 
-const connectionUri = `${config.mongopreuri + config.user}:${config.pass}`;
+const connectionUri = `${config.mongopreuri + config.user}:${config.pass}${config.mongouri}`;
+console.log ('connecting to ', connectionUri);
 
 mongoose.Promise = global.Promise;
 
