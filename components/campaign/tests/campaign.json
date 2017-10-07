@@ -2,7 +2,7 @@
 	"name":"Nombre campaña",
 	"title" : "Título del email",
 	"subject" : "Sujeto del email",
-	"recipents" : ["test@email.com","test2@email.com"],
+	"recipents" : ["test@email.com","asdf@asf.com","lastexample@jejeje.com"],
 	"schedule" : 1504526760031,
 	"html" : "<html><head></head><body><p>Contenido del Email</p></body></html>"
 }

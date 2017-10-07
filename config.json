@@ -3,5 +3,5 @@
 	"user":"aspirina",
 	"pass":"paracetamol",
 	"mongopreuri":"mongodb://",
-	"mongouri":"@ds113455.mlab.com:13455/evolufarma"
+	"mongouri":"@ds113435.mlab.com:13435/evolutest"
 }

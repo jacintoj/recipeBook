@@ -1,6 +1,7 @@
 const campaign = require('./campaign/campaign.routes');
 
 const routes = function (app) {
+  app.get('/campaign/mostactive', campaign.getByRecipentsNumber);
   app.get('/campaign/:camid', campaign.getOne);
   app.get('/campaign', campaign.get);
   app.post('/campaign', campaign.post);

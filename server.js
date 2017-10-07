@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 const port = config.port || 3000;
 
 const server = app.listen(port, () => {
-  console.log(`lets begin cook churros ${port}`);
+  console.log(`Here we go ${port}`);
 });
 
 Routes(app);
