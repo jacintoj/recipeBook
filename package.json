@@ -1,0 +1,31 @@
+{
+  "name": "churera",
+  "version": "1.0.0",
+  "description": "A Boilerplate to make test easier",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --colors --reporter spec --recursive ./components/*/tests/*.spec.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josheriff/churrera.git"
+  },
+  "author": "Josheriff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Josheriff/churrera/issues"
+  },
+  "homepage": "https://github.com/Josheriff/churrera#readme",
+  "dependencies": {
+    "body-parser": "1.16.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.8.0",
+    "express": "4.14.1",
+    "mocha": "^4.0.1",
+    "mongoose": "4.8.3",
+    "node-uuid": "1.4.7",
+    "shortid": "^2.2.8",
+    "supertest": "^3.0.0"
+  }
+}
