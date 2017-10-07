@@ -58,7 +58,22 @@ describe('API', () => {
             return done(err);
           }
           res.body.should.be.instanceof(Array);
-          res.body.should.have.length.at.most(10);
+          return done();
+        });
+    });
+
+    it('Get all campaigns sorted by number of recipents', (done) => {
+      api
+        .get(`${route}/mostactive`)
+        .expect('Content-Type', /json/)
+        .expect(200)
+        .end((err, res) => {
+          if (err) {
+            return done(err);
+          }
+          const length = res.body.length - 1;
+          res.body.should.be.instanceof(Array);
+          res.body[0].numberOfRecipents.should.be.gte(res.body[length].numberOfRecipents);
           return done();
         });
     });
