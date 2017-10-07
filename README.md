@@ -33,8 +33,8 @@ Json to send:
 	"name":"String, name of the campaign",
 	"title" : "String, title of the email",
 	"subject" : "String, what is about",
-	"recipents" : email of arrays like this ->["test@email.com","asdf@asf.com","lastexample@jejeje.com"],
-	"schedule" : Number like this->1504526760031,
+	"recipents" : "email of arrays like this ->["test@email.com","asdf@asf.com","lastexample@jejeje.com"]",
+	"schedule" : "Number like this->1504526760031",
 	"html" : "<html><head></head><body><p>Email Content</p></body></html>"
 }
 ```
