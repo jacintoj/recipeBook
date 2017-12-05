@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET, POST');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 const port = config.port || 3000;
 
 const server = app.listen(port, () => {
-  console.log(`Here we go ${port}`);
+  console.log(`Here we go ${port} for Recipe Book`);
 });
 
 Routes(app);

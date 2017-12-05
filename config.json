@@ -1,7 +1,7 @@
 {
 	"port":3000,
-	"user":"aspirina",
-	"pass":"paracetamol",
+	"user":"arguinano",
+	"pass":"(Rico,rico,rico)",
 	"mongopreuri":"mongodb://",
-	"mongouri":"@ds113435.mlab.com:13435/evolutest"
+	"mongouri":"@ds113435.mlab.com:13435/recipebook"
 }

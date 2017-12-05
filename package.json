@@ -1,7 +1,7 @@
 {
   "name": "evolutest",
   "version": "1.0.0",
-  "description": "Evolu test",
+  "description": "Recipe Bok test",
   "main": "server.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --colors --reporter spec --recursive ./components/*/tests/*.spec.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Josheriff/evolutest.git"
+    "url": "git+https://github.com/jacintoj/receiptBook.git"
   },
-  "author": "Josheriff",
+  "author": "Josheriff & Jacintoj",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Josheriff/evolutest/issues"
+    "url": "https://github.com/jacintoj/receiptBook/issues"
   },
-  "homepage": "https://github.com/Josheriff/evolutest#readme",
+  "homepage": "https://github.com/jacintoj/receiptBook#readme",
   "dependencies": {
     "body-parser": "1.16.1",
     "chai": "^4.1.2",
