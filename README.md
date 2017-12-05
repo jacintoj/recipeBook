@@ -1,4 +1,4 @@
-# Evolutest
+# ReceiptBook
 
 *To start* go to the project directory and type:
 ```
@@ -22,18 +22,17 @@ Some endpoints have been changed from the tests asked:
 
 Api endpoints:
 
-#### POST -> '/campaign'
+#### POST -> '/receipt'
 
-Create a Campaign with the data sent in Json:
+Create a Receipt with the data sent in Json:
 
 Json to send:
 
 ```json
 {
-	"name":"String, name of the campaign",
-	"title" : "String, title of the email",
-	"subject" : "String, what is about",
-	"recipents" : "email of arrays like this ->["test@email.com","asdf@asf.com","lastexample@jejeje.com"]",
+	"name":"String, name of the receipt",
+	"origin" : "String, origin of the recepit",
+	"ingredients" : "email of arrays like this ->["rice","","lastexample@jejeje.com"]",
 	"schedule" : "Number like this->1504526760031",
 	"html" : "<html><head></head><body><p>Email Content</p></body></html>"
 }
