@@ -17,7 +17,7 @@ exports.put = async function put(recipeId, data) {
 };
 
 exports.deleteOne = async function deleteOne(recipeId){
-  return await RecipeModel.delete(recipeId);
+  return await RecipeModel.deleteOne(recipeId);
 };
 
 

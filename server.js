@@ -12,7 +12,7 @@ Storage.connect();
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// parse application/jsonº
+// parse application/json
 app.use(bodyParser.json());
 
 

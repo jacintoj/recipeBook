@@ -1,8 +1,8 @@
-const receipt = require('./recipe/recipe.routes');
+const recipe = require('./recipe/recipe.routes');
 
 const routes = function (app) {
   app.get('/recipe/:recipeid', recipe.getOne);
-  app.get('/recipes', recipe.getAll);
+  app.get('/recipes', recipe.get);
   app.post('/recipe', recipe.post);
   app.put('/recipe/:recipeid', recipe.put);
   app.delete('/recipe/:recipeid', recipe.delete);

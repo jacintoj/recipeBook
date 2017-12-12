@@ -9,7 +9,7 @@ mongoose.Promise = global.Promise;
 exports.connect = async function () {
   mongoose.connect(connectionUri, {
   		useMongoClient: true,
-  });
+  }).catch(err => console.log(err));;
 };
 
 exports.disconnect = async function () {
