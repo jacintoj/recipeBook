@@ -25,7 +25,7 @@ Api endpoints:
 Give you all the recipes.
 
 
-#### GET -> '/campaign/{id}'
+#### GET -> '/recipe/{id}'
 
 Give you only the recipe with that id.
 
