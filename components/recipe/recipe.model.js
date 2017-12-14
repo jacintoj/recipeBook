@@ -11,6 +11,7 @@ const RecipeSchema = Schema({
   numberOfDiners: { type: Number },
   steps: { type: String, required: true },
   ingredients: { type: [String], required: true },
+  image: { type: String, required: true }
 }, { timestamps: true });
 
 const RecipeModel = mongoose.model('recipe', RecipeSchema);

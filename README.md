@@ -58,7 +58,8 @@ Json to send:
 	"timePreparation": "Integer Number (required)",
 	"numberOfDiners": "Integer Number",
 	"steps" : "String, preparation steps (required)",
-	"ingredients" : "ingredients array like this ->["rice","beans","salt"] (required)"
+	"ingredients" : "ingredients array like this ->["rice","beans","salt"] (required)",
+	"image": "image url"
 }
 ```
 
