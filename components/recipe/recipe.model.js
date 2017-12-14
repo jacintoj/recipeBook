@@ -37,7 +37,7 @@ exports.getAll = async function () {
 
 exports.getOne = async function (recipeId) {
   try {
-    const recipe = await RecipeModel.findById(recipeId);
+    const recipe = await RecipeModel.findById(mongoose.Types.ObjectId(recipeId));
     return recipe;
   } catch (error) { return error; }
 };
@@ -46,12 +46,12 @@ exports.put = async function (recipeId, recipeData) {
   try {
     const recipe = await RecipeModel.findOne({ '_id': mongoose.Types.ObjectId(recipeId) });
 
-    recipe.name = recipeData.name;
-    recipe.origin = recipeData.origin;
-    recipe.timePreparation = recipeData.timePreparation;
-    recipe.numberOfDiners = recipeData.numberOfDiners;
-    recipe.steps = recipeData.steps;
-    recipe.ingredients = recipeData.ingredients;
+    recipe.name = recipeData.name || recipe.name; 
+    recipe.origin = recipeData.origin ||  recipe.origin;
+    recipe.timePreparation = recipeData.timePreparation || recipe.timePreparation;
+    recipe.numberOfDiners = recipeData.numberOfDiners ||  recipe.numberOfDiners;
+    recipe.steps = recipeData.steps || recipe.steps;
+    recipe.ingredients = recipeData.ingredients || recipe.ingredients;
 
     await recipe.save();
     return recipe;

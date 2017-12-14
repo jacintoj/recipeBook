@@ -26,7 +26,8 @@ app.use((req, res, next) => {
   next();
 });
 
-const port = config.port || 3000;
+//const port = config.port || 3000;
+const port = process.env.PORT || 3000;
 
 const server = app.listen(port, () => {
   console.log(`Here we go ${port} for Recipe Book`);
