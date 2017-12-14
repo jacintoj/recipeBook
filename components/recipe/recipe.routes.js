@@ -28,7 +28,7 @@ module.exports.post = async function (req, res) {
 module.exports.put = async function (req, res) {
   try {
     const result = await RecipeController.put(req.params.recipeid, req.body);
-    res.status(204).json(result);
+    res.status(201).json(result);
   } catch (error) { res.status(500).json(error); }
 };
 
