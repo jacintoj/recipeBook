@@ -1,15 +1,13 @@
-# ReceiptBook
+# RecipeBook
+
+## Heroku url: 
+https://bookofrecipes.herokuapp.com
 
 *To start* go to the project directory and type:
 ```
 node server
 ```
 
-*To run test* , with the server running in a console, in the project directory in other console type:
-
-```
-npm run test
-```
 
 The mongo connection is in the cloud with mlab service
 
@@ -22,40 +20,48 @@ Some endpoints have been changed from the tests asked:
 
 Api endpoints:
 
-#### POST -> '/receipt'
+#### GET -> '/recipes':
 
-Create a Receipt with the data sent in Json:
+Give you all the recipes.
 
-Json to send:
-
-```json
-{
-	"name":"String, name of the receipt",
-	"origin" : "String, origin of the recepit",
-	"ingredients" : "email of arrays like this ->["rice","","lastexample@jejeje.com"]",
-	"schedule" : "Number like this->1504526760031",
-	"html" : "<html><head></head><body><p>Email Content</p></body></html>"
-}
-```
-
-CAUTION: Sinsce this is a test I haven't curated the strings so it is vulnerable to DDOS attacks
-but i have to finish the second part and can do it right now.
-
-#### GET -> '/campaign':
-
-Give you all the campaigns.
-
-#### GET -> '/campaign/mostactive'
-
-Give you all the campaigns ordered for number of email adresess they have
 
 #### GET -> '/campaign/{id}'
 
-Give you only the campaing with that id.
+Give you only the recipe with that id.
 
 If don't found just an empty object
 
 I usually put a 404 on that case, but didnt know if the requirements of security wants to inform the user with a 404 or with what..
 
 
+#### POST -> '/recipe'
+
+Create a Recipe with the data sent in Json
+
+
+#### PUT -> '/recipe/{id}'
+
+Modify a Recipe with the data sent in Json
+
+
+#### DELETE -> '/recipe/{id}'
+
+Delete only the recipe with that id.
+
+
+Json to send:
+
+```json
+{
+	"name":"String, name of the recipe (required)",
+	"origin" : "String, origin of the recipe (required)",
+	"timePreparation": "Integer Number (required)",
+	"numberOfDiners": "Integer Number",
+	"steps" : "String, preparation steps (required)",
+	"ingredients" : "ingredients array like this ->["rice","beans","salt"] (required)"
+}
+```
+
+CAUTION: Since this is an exercise I haven't curated the strings so it is vulnerable to DDOS attacks
+but i have to finish the second part and can do it right now.
 
