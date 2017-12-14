@@ -25,7 +25,7 @@ Api endpoints:
 Give you all the recipes.
 
 
-#### GET -> '/recipe/{id}'
+#### GET -> '/recipes/{id}'
 
 Give you only the recipe with that id.
 
@@ -34,17 +34,17 @@ If don't found just an empty object
 I usually put a 404 on that case, but didnt know if the requirements of security wants to inform the user with a 404 or with what..
 
 
-#### POST -> '/recipe'
+#### POST -> '/recipes'
 
 Create a Recipe with the data sent in Json
 
 
-#### PUT -> '/recipe/{id}'
+#### PUT -> '/recipes/{id}'
 
 Modify a Recipe with the data sent in Json
 
 
-#### DELETE -> '/recipe/{id}'
+#### DELETE -> '/recipes/{id}'
 
 Delete only the recipe with that id.
 
